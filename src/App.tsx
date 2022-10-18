@@ -1,7 +1,14 @@
+import Select from './components/select.component';
+
+const options = [
+	{ label: 'First', value: 1 },
+	{ label: 'Second', value: 2 },
+	{ label: 'Third', value: 3 },
+];
 function App() {
 	return (
 		<div className='App'>
-			<h1>My select app</h1>
+			<Select options={options} />
 		</div>
 	);
 }
