@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Select from './components/select.component';
 
 const options = [
@@ -6,9 +7,16 @@ const options = [
 	{ label: 'Third', value: 3 },
 ];
 function App() {
+	const [value, setValue] = useState<typeof options[0] | undefined>(options[0]);
 	return (
 		<div className='App'>
-			<Select options={options} />
+			<Select
+				options={options}
+				value={value}
+				onChange={(o) => {
+					setValue(o);
+				}}
+			/>
 		</div>
 	);
 }
