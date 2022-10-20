@@ -8,7 +8,7 @@ export type SelectOption = {
 
 type MultiSelectProps = {
 	multi: true;
-	value?: SelectOption[];
+	value: SelectOption[];
 	onChange: (value: SelectOption[]) => void;
 };
 
