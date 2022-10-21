@@ -68,7 +68,7 @@ function Select({ multi, value, onChange, options }: SelectProps) {
 				{multi
 					? value.map((v) => (
 							<button
-								className={style['option-bage']}
+								className={style['option-badge']}
 								key={v.value}
 								onClick={(e) => {
 									e.stopPropagation();
